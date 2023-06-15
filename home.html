@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>Saolon</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,600;0,700;1,200;1,400&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;400;500;600&family=Comfortaa:wght@300;400;500;600;700&family=Dancing+Script:wght@400;600&family=Raleway:ital,wght@0,200;0,300;0,600;0,700;1,200;1,400&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
+    <script src="mimo.js" ></script>
+    <script src="https://kit.fontawesome.com/b644f6951c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section id="header">
+        <img class="logo" src="Sao-Images/Saolon-Black.png">
+    <div >
+        <nav id="menu">
+            <i class="fa-sharp fa-solid fa-xmark" id="fa1" onclick="toggle(menu)" ></i>
+            
+            <ul class="navbar" >
+                <li>
+                    <i class="fa-solid fa-magnifying-glass-location" id="search" onclick="toggle(search)"></i>
+                </li>
+                <li>
+                    <a class="active" href="home.html">Home</a>
+                </li>
+                <li>
+                    <a href="517102.html">Current Service</a>
+                </li>
+                <li>
+                    <a href="about.html">About us</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact us</a>
+                </li>
+                <li>
+                    <a href="support.html">Support us</a>
+                </li>
+                 <li>
+                    <a  href="login.html">Login/Sign-in</a>
+                </li> 
+            </ul>
+        </nav>
+        <i class="fa-solid fa-bars" id="fa2" onclick="toggle(menu)"></i>
+    </div>
+    </section>
+    <div id="search_bar">
+        <form action="">
+            <input type="text" title="6 digits number" pattern="[0-9]{6}" placeholder="Enter your pincode" name="search" id="pincode_search">
+            <input type="submit" value="submit" id="formSubmit" onclick="check()">
+        </form>
+        <i class="fa-sharp fa-solid fa-xmark" id="fa3" onclick="toggle(search)" ></i>
+    </div>
+    <template city_data>
+        <div class="city"></div>
+    </template>
+    <section id="hero">
+        
+        <div class="content" id="content">
+            <h2 style="font-family:'Dancing Script'; text-decoration: none;">
+                Mї-<span style="color: #d54ed1; font-family:'Dancing Script'; text-decoration: none;">MƠ</span>
+            </h2>
+            <h4>
+                Great Deals
+            </h2>
+            <h2>
+                <span style="color :#d54ed1; font-style: italic;">Exclusive</span> 
+                Offers
+            </h2>
+            <h4>
+                Best Service
+            </h4>
+            <!--<div class="login">
+                <button type="button" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign-in</button>
+                <i id="log" class="fa-solid fa-arrow-right-to-bracket" style="color: azure;"></i>
+            </div>
+                    -->
+        </div>
+    </section>
+    <section class="mfooter">
+        <div id="footer">
+            <div class="support">
+                <h6 >
+                    Support Us 
+                </h6>
+                <ul class="sup">
+                    <li>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa-brands fa-snapchat"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h6>
+                    Contact Us 
+                </h6>
+                <div class="subcontact">
+                    <h8>
+                        Email : 
+                    </h8>
+                    <p>
+                        saolonmo@gmail.com
+                    </p>
+                    <h8>
+                        Contact no:
+                    </h8>
+                    <p>6302285266</p>
+                </div>
+            </div>
+            <div class="about">
+                <h6>About Us</h6>
+                <p >Estd on Nov'22 <br>
+                    Active services from Feb'23
+                </p>
+                <h8>
+                    Address:
+                <h8>
+                <p >
+                    Ramgampeta, Tirupati
+                    517102
+                    INDIA
+                </p>
+            </div>
+            <div class="help">
+                <h6>Help</h6>
+                <p >
+                    We are trying our very best to provide seamless services.
+                    
+                    <br>Contact our email for any inconvenience.
+                </p>
+            </div>
+        </div>
+        <p id="copyr">Copyright 2022 by Refsnes Data. All Rights Reserved.</p>
+    </section>
+<div id="id01" class="modal">
+    <form class="modal-content animate" action="" method="post">
+      <div class="imgcontainer" >
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <img src="Sao-Images/signin.svg" alt="Avatar" class="avatar">
+      </div>
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+  
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+          <br>
+          <br>
+        <button class="submit" type="submit">Login</button>
+      </div>
+  <br>
+  <br>
+  <br>
+      <div class="container2" style="background-color:#070707">
+        <p>Don't have an account? <a href="login.html">Sign-up</a> </p>
+        <p class="psw">Forgot <a href="#" style="color: violet; text-decoration: none;">password?</a></p>
+      </div>
+    </form>
+  </div>
+  <script>
+    var menu=document.getElementById("menu");
+    var hero=document.getElementById('hero');
+    var search_bar=document.getElementById('search_bar');
+    
+    
+    function toggle(toggler)
+    {
+        
+        if(toggler==menu)
+        {
+            
+            search_bar.classList.toggle('active');
+            hero.classList.toggle('active');
+            menu.classList.toggle('active');
+        }
+        if(toggler==search)
+        {
+            hero.classList.toggle('active');
+            search_bar.classList.toggle('active');
+        }
+        
+    }
+    
+  var modal = document.getElementById('id01');
+  window.onclick = function(event) {
+      if (event.target == id01) {
+          modal.style.display = "none";
+      }
+  }
+  </script>
+</body>
+</html>

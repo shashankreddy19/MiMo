@@ -1,0 +1,226 @@
+*
+{
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+}
+#header
+{
+    z-index: 99;
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding: 10px 24px 10px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 4px #582957;
+}
+#header .navbar
+{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar li{
+    position: relative;
+    padding: 0 24px 0;
+}
+.navbar li a{
+    text-decoration: none;
+    color: azure;
+    transition: 100ms ease-in-out;
+}
+.navbar #search
+{
+    transition: 3ms;
+    color: azure;
+    cursor: pointer;
+}
+#header .navbar li a:hover,
+#header .navbar li a.active
+{
+    color: rgb(223, 139, 207);
+}
+#header .navbar #search:hover
+{
+    color: rgb(225, 130, 208);
+}
+.navbar li a.active::after
+{
+    content: "";
+    width: 30%;
+    height: 2px;
+    position: absolute;
+    bottom: -4px;
+    left: 25px;
+    background: rgb(223, 139, 207);
+}
+.hero
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.login
+{
+    position: relative;
+    border: 2px solid black;
+    width: 40%;
+    padding: 30px 30px 0;
+}
+.login form input
+{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background: none;
+    width: 100%;
+    margin: 10px 0 30px;
+}
+.login form input:focus
+{
+    outline: none;
+}
+.login form label
+{
+    font-family: 'Ubuntu';
+    font-weight: 600;
+}
+.login button
+{
+    background-color: rgb(0, 0, 0);
+    border: none;
+    color: azure;
+    padding: 5px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 1px 3px rgb(154, 21, 148);
+    font-family: 'Space Grotesk', sans-serif;
+    transition: 100ms;
+}
+.login button:hover
+{
+    background-color: rgb(221, 59, 175);
+    box-shadow: 0px 1px 5px rgb(49, 48, 49);
+}
+.extra
+{
+    border-radius: 15px 15px 0 0;
+    position: absolute;
+    display: flex;
+    padding: 10px 30px;
+    position: relative;
+    background-color: #000000;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 3px 0px 8px rgb(246, 101, 224);
+}
+.extra p
+{
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-size: 14px;
+    color: aliceblue;
+}
+.extra a
+{
+    text-decoration: none;
+    color: #f250ef;
+    font-size: 17px;
+    font-family: 'Raleway', sans-serif;
+    transition: 100ms;
+}
+.extra a:hover
+{
+    text-shadow:0px 2px 4px rgb(255, 255, 255);
+}
+.hero .imgl
+{
+    width: 26.48%;
+}
+.hero .imgr
+{
+    width: 23.3%;
+}
+
+@media screen and (max-width: 914.40px) 
+{
+    #menu.active 
+    {
+        visibility: visible;
+        opacity: 1;
+        right: 0px;
+    }
+    .hero#hero.active
+    {
+        filter: blur(20px);
+        user-select: none;
+        pointer-events: none;
+    }
+    nav
+    {
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.5s;
+        z-index: 999;
+        background: black;
+        width: 250px;
+        height: 1000px;
+        position: fixed;
+        top: 0;
+        right: -250px;
+    }
+    #header .navbar
+    {
+        display: block;
+        height: 100%;
+    }
+    #header nav li
+    {
+        width: fit-content;
+        border-radius: 25px;
+        padding: 10% 10%;
+        display: block;
+    }
+    .navbar li a.active::after
+    {
+        content: "";
+        width: 35%;
+        height: 2px;
+        position: absolute;
+        top: 40px;
+        left: 22px;
+        background: rgb(223, 139, 207);
+    }
+    #fa1,#fa2
+    {
+        color: azure;
+        display: block;
+        margin: 20px;
+        cursor: pointer;
+        font-size: 22px;
+    }
+    #fa1
+    {
+        margin-left: 64px;
+    }
+}
+
+  
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+

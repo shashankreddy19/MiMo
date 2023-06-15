@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="mimo.js" defer></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="search.css">
+</head>
+<body>
+    <div id="search_bar">
+        <form action="">
+            <input type="text" title="6 digits number" pattern="[0-9]{6}" placeholder="Enter your pincode" name="search" id="search">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <template city_data>
+        <div class="mcity" mcity_name>
+            <p class="city" city_name></p>
+        </div>
+    </template>
+</body>
+</html>

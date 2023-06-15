@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Saolon-Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,600;0,700;1,200;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;400;500;600&family=Comfortaa:wght@300;400;500;600;700&family=Dancing+Script:wght@400;600&family=Raleway:ital,wght@0,200;0,300;0,600;0,700;1,200;1,400&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b644f6951c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section id="header">
+        <img class="logo" src="Sao-Images/Saolon-Black.png">
+    <div>
+        <nav id="menu">
+            <i class="fa-sharp fa-solid fa-xmark" id="fa1" onclick="toggle()" ></i>
+            <ul class="navbar" >
+                <li>
+                    <i class="fa-solid fa-magnifying-glass-location" id="search"></i>
+                </li>
+                <li>
+                    <a  href="home.html">Home</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a class="active" href="login.html">Login/Sign-in</a>
+                </li>
+            </ul>
+        </nav>
+        <i class="fa-solid fa-bars" id="fa2" onclick="toggle()"></i>
+    </div>
+    </section>
+    <section class="hero" id="hero">
+        <img class="imgl" src="Sao-Images/loginl.svg" alt="">
+        <div class="login">
+            <form action="">
+                <label for="username">Username/Email </label>
+                <br>
+                <input type="text" name="username" placeholder="Enter your email" required>
+                <br>
+                <label for="password">Password </label>
+                <br>
+                <input type="password" name="password" placeholder="Enter your password" required>
+                <label for="password">Confirm Password </label>
+                <br>
+                <input type="password" name="re-password" placeholder="Re-enter your password" required>
+                <div>
+                    <button type="submit">Create Account</button>
+                </div>
+            </form>
+            <br>
+            <br>
+            <div class="extra">
+                <div>
+                    <p>Already have an account? <a id="signin" href="#">Sign-in</a> </p>
+                </div>
+                <div>
+                    <a href="forgetpassword.html">Forgot password?</a>
+                </div>
+            </div>
+        </div>
+        <img class="imgr" src="Sao-Images/loginr.svg" alt="">
+    </section>
+    <script>
+        
+        var menu=document.getElementById("menu");
+        function toggle()
+        {
+            var hero=document.getElementById('hero');
+            hero.classList.toggle('active');
+            menu.classList.toggle('active');
+        }
+  </script>
+</body>
+</html>
